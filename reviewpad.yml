@@ -6,7 +6,7 @@ workflows:
   - name: test1
     run:
       - $addLabel("more than 1")
-      - $merge()
+      - $merge("squash")
 
   - name: test2
     run:
