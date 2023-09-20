@@ -4,7 +4,9 @@ checks:
 
 workflows:
   - name: test1
-    run: $merge()
+    run:
+      - $addLabel("more than 1")
+      - $merge()
 
   - name: test2
     run:
