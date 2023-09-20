@@ -4,11 +4,7 @@ checks:
 
 workflows:
   - name: test1
-    run:
-      if: $size() > 1
-      then: 
-        - $addLabel("more than 1")
-        - $merge()
+    run: $merge()
 
   - name: test2
     run:
