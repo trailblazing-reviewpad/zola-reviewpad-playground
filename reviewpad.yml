@@ -4,3 +4,4 @@ checks:
   high-code-churn:
     parameters:
       threshold: 1
+      min-deleted-lines: 1
