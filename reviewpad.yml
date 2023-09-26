@@ -1,3 +1,6 @@
 checks:
   non-conventional-commits:
     activation: on
+  high-code-churn:
+    parameters:
+      threshold: 1
