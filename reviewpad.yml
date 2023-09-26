@@ -3,5 +3,5 @@ checks:
     activation: on
   high-code-churn:
     parameters:
-      threshold: 1
+      max-rate: 1
       min-deleted-lines: 1
