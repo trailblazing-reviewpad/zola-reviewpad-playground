@@ -5,3 +5,7 @@ checks:
     parameters:
       max-rate: 1
       min-deleted-lines: 1
+  high-internal-code-churn:
+    parameters:
+      max-rate: 1
+      min-deleted-lines: 1
