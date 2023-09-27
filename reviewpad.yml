@@ -1,10 +1,10 @@
 workflows:
   - name: test
-    run: $addLabel("1"):
+    run: $addLabel("1")
   - name: test2
-    run: $addLabel("2"):
+    run: $addLabel("2")
   - name: test3
-    run: $addLabel("3"):
+    run: $addLabel("3")
   - name: test4
     run: $addLabel("4")
   - name: test5
