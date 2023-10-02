@@ -1,21 +1,7 @@
-workflows:
-  - name: test
-    run: $addLabel("1")
-  - name: test2
-    run: $addLabel("2")
-  - name: test3
-    run: $addLabel("3")
-  - name: test4
-    run: $addLabel("4")
-  - name: test5
-    run: $addLabel("5")
-  - name: test6
-    run: $addLabel("6")
-  - name: test7
-    run: $addLabel("7")
-  - name: test8
-    run: $addLabel("8")
-  - name: test9
-    run: $addLabel("9")
-  - name: test10
-    run: $addLabel("10")
+checks:
+  non-conventional-commits:
+    activation: on
+  large:
+    parameters:
+      max-lines: 1
+     
