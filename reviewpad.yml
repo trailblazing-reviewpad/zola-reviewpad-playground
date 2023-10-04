@@ -3,11 +3,14 @@ checks:
     activation: on
   large:
     parameters:
-      max-lines: 0
+      max-lines: -1
+  stale:
+    parameters:
+      max-idle-days: -1
   high-code-churn:
     parameters:
-      max-rate: 0
-      min-deleted-lines: 0
+      max-rate: -1
+      min-deleted-lines: -1
      
 workflows:
   - name: test
