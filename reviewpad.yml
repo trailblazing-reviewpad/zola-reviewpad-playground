@@ -9,3 +9,6 @@ checks:
       max-rate: 0
       min-deleted-lines: 0
      
+workflows:
+  - name: test
+    run: $addLabel("test")
