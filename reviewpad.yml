@@ -1,17 +1,27 @@
 checks:
-  non-conventional-commits:
-    activation: on
+  git-conflict:
+    activation: off
+  high-code-churn:
+    activation: off
+  high-internal-code-churn:
+    activation: off
   large:
     parameters:
       max-lines: -1
+  long-lived:
+    parameters:
+      max-days: -1
+  long-pick-up-time:
+    activation: off
+  many-comments:
+    activation: off
+  many-review-iterations:
+    activation: off
+  non-conventional-commits:
+    activation: on
   stale:
     parameters:
       max-idle-days: -1
-  high-code-churn:
-    parameters:
-      max-rate: -1
-      min-deleted-lines: -1
-     
-workflows:
-  - name: test
-    run: $addLabel("test")
+  unstable-build:
+    activation: off
+  
