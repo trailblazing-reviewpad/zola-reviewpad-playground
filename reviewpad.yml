@@ -24,4 +24,7 @@ checks:
       max-idle-days: -1
   unstable-build:
     activation: off
-  
+
+workflows:
+  - name: test
+    run: $addLabel("test")
