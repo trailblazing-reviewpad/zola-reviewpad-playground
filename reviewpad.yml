@@ -29,5 +29,4 @@ checks:
 
 workflows:
   - name: test
-    trigger-on-check: stale
     run: $addLabel("test")
