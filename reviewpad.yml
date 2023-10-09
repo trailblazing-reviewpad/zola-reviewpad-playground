@@ -6,9 +6,11 @@ checks:
   high-internal-code-churn:
     activation: off
   large:
+    activation: off
     parameters:
       max-lines: -1
   long-lived:
+    activation: off
     parameters:
       max-days: -1
   long-pick-up-time:
@@ -18,7 +20,7 @@ checks:
   many-review-iterations:
     activation: off
   non-conventional-commits:
-    activation: on
+    activation: off
   stale:
     parameters:
       max-idle-days: -1
@@ -27,4 +29,5 @@ checks:
 
 workflows:
   - name: test
+    trigger-on-check: stale
     run: $addLabel("test")
