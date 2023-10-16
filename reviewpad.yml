@@ -10,7 +10,6 @@ checks:
     parameters:
       max-lines: -1
   long-lived:
-    activation: off
     parameters:
       max-days: -1
   long-pick-up-time:
