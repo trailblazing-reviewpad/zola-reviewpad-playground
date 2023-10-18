@@ -1,30 +1,20 @@
 checks:
-  git-conflict:
-    activation: off
-  high-code-churn:
-    activation: off
-  high-internal-code-churn:
-    activation: off
   large:
-    activation: off
+    activation: on
     parameters:
       max-lines: -1
+  long-pick-up-time:
+    activation: on
+    parameters:
+      max-hours: -1
   long-lived:
+    activation: off
     parameters:
       max-days: -1
-  long-pick-up-time:
-    activation: off
-  many-comments:
-    activation: off
-  many-review-iterations:
-    activation: off
-  non-conventional-commits:
-    activation: off
   stale:
+    activation: off
     parameters:
       max-idle-days: -1
-  unstable-build:
-    activation: off
 
 workflows:
   - name: test
