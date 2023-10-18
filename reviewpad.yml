@@ -8,11 +8,9 @@ checks:
     parameters:
       max-hours: -1
   long-lived:
-    activation: off
     parameters:
       max-days: -1
   stale:
-    activation: off
     parameters:
       max-idle-days: -1
 
